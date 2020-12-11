@@ -9,7 +9,7 @@ import com.luseen.spacenavigation.SpaceOnClickListener
 import com.luseen.spacenavigation.SpaceOnLongClickListener
 
 //todo  1- clean architecture
-//todo  2- di
+//todo  2- di  koin kodein
 //todo  3- build variants
 //todo  4- clean code
 //todo  5- modular architecture
