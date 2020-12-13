@@ -17,13 +17,15 @@ import com.luseen.spacenavigation.SpaceOnLongClickListener
 class MainActivity : AppCompatActivity() {
     //
     lateinit var spaceNavigationView: SpaceNavigationView
-
+//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 //        if (savedInstanceState == null)
 //            FragmentNavigator(this).replace(fragmentFrom(Fragments.Splash), false)
+
+
 
         setUpAppBar(savedInstanceState)
     }
