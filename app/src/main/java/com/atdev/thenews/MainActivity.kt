@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 //        if (savedInstanceState == null)
 //            FragmentNavigator(this).replace(fragmentFrom(Fragments.Splash), false)
 
+
         setUpAppBar(savedInstanceState)
     }
 
