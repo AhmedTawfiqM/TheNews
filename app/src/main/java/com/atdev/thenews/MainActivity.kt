@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        if (savedInstanceState == null)
+//            FragmentNavigator(this).replace(fragmentFrom(Fragments.Splash), false)
+
         setUpAppBar(savedInstanceState)
     }
 
