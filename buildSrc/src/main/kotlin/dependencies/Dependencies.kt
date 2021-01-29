@@ -16,4 +16,11 @@ object Dependencies {
     const val jUnit = "junit:junit:${Versions.junit}"
     const val androidx_test = "androidx.test.ext:junit:${Versions.androidx_test}"
     const val espresso_core = "androidx.test.espresso:espresso-core:${Versions.espresso_core}"
+
+    //network
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
+    const val retrofitConvertor = "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
+
+    //injection DI
+    const val koin = "org.koin:koin-android:${Versions.koinVersion}"
 }

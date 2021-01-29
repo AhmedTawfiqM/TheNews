@@ -43,9 +43,11 @@ dependencies {
     //my libs
     implementation Dependencies.space_navigation_bar
     //modules
-    implementation(Modules.splash)
+    implementation project(Modules.presentation)
+    implementation project(Modules.data)
+    implementation project(Modules.splash)
     //test libs
     testImplementation Dependencies.jUnit
     androidTestImplementation Dependencies.androidx_test
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation Dependencies.espresso_core
 }

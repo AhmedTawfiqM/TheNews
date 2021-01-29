@@ -10,4 +10,7 @@ object Versions{
     const val junit="4.+"
     const val androidx_test="1.1.2"
     const val espresso_core="3.3.0"
+    //network
+    const val retrofit_version="2.9.0"
+    const val koinVersion = "2.0.1"
 }
