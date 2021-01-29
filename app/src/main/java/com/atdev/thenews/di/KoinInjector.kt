@@ -4,6 +4,7 @@ import thenews.common.data.di.injectDataModules
 
 class KoinInjector {
 
+
     fun injectModules() {
 
         injectDataModules()
