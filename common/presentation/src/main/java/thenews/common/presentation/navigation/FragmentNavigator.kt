@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity
 
 class FragmentNavigator(
     private val activity: FragmentActivity,
-    val frameResourceId: Int
+    private val frameResourceId: Int = NavigatorOptions.frameLayoutId
 ) {
 
     fun addFragment(fragment: Fragment, addBackStack: Boolean = true) {
@@ -51,12 +51,12 @@ class FragmentNavigator(
         ft.commitAllowingStateLoss()
     }
 
-    fun showDialogFragment(dialog: DialogFragment, tag: String) {
+    fun popUpDialogFragment(dialog: DialogFragment, tag: String) {
         dialog.show(activity.supportFragmentManager, tag)
     }
 
     fun showDialogFragment(dialog: DialogFragment) {
-        showDialogFragment(dialog, dialog.javaClass.name)
+        popUpDialogFragment(dialog, dialog.javaClass.name)
     }
 
     private enum class TransactionBehavior {
