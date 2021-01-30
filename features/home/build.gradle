@@ -34,6 +34,6 @@ android {
 
 dependencies {
 
-    api project(Modules.presentation)
-    api project(Modules.data)
+    implementation project(Modules.presentation)
+    implementation project(Modules.data)
 }

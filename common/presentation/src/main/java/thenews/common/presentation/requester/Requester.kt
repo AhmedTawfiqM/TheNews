@@ -5,7 +5,7 @@ import kotlinx.coroutines.coroutineScope
 
 class Requester<T> {
 
-    suspend fun executeCall(repoCall: () -> suspend () -> T)
+    suspend fun executeCall(repoCall: suspend () -> T)
             : suspend () -> T {
         val job = coroutineScope {
             async {

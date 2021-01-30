@@ -15,4 +15,6 @@ object Versions{
     const val koinVersion = "2.0.1"
     //courotines
     const val courotine ="1.4.2"
+
+    const val androidx_ViewModelExt = "2.2.0"
 }

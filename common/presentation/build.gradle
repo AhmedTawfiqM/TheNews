@@ -45,7 +45,7 @@ dependencies {
     implementation Dependencies.constraint_layout
     //my libs
     implementation Dependencies.space_navigation_bar
-
+    api Dependencies.androidx_ViewModelExt
     //test libs
     testImplementation Dependencies.jUnit
     androidTestImplementation Dependencies.androidx_test

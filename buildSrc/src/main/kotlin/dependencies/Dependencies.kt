@@ -29,6 +29,8 @@ object Dependencies {
     const val koin_java = "org.koin:koin-java:${Versions.koinVersion}"
     const val koin_ext = "org.koin:koin-android-ext:${Versions.koinVersion}"
 
+    const val androidx_ViewModelExt = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.androidx_ViewModelExt}"
+
     //coroutine
     const val coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.courotine}"
     const val coroutines_android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.courotine}"
