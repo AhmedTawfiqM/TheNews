@@ -13,4 +13,6 @@ object Versions{
     //network
     const val retrofit_version="2.9.0"
     const val koinVersion = "2.0.1"
+    //courotines
+    const val courotine ="1.4.2"
 }

@@ -19,8 +19,17 @@ object Dependencies {
 
     //network
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
-    const val retrofitConvertor = "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
+    const val retrofitConvertor =
+        "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
 
-    //injection DI
+    //DI   //koin
     const val koin = "org.koin:koin-android:${Versions.koinVersion}"
+    const val koin_scope = "org.koin:koin-android-scope:${Versions.koinVersion}"
+    const val koin_viewModel = "org.koin:koin-android-viewmodel:${Versions.koinVersion}"
+    const val koin_java = "org.koin:koin-java:${Versions.koinVersion}"
+    const val koin_ext = "org.koin:koin-android-ext:${Versions.koinVersion}"
+
+    //coroutine
+    const val coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.courotine}"
+    const val coroutines_android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.courotine}"
 }

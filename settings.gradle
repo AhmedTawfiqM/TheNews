@@ -1,3 +1,4 @@
+include ':features:home'
 include ':features:splash'
 include ':features'
 include ':common:data'

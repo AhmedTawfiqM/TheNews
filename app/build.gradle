@@ -34,20 +34,6 @@ android {
 }
 
 dependencies {
-    //initial
-    implementation Dependencies.Kotlin
-    implementation Dependencies.androidx_core
-    implementation Dependencies.appCompact
-    implementation Dependencies.materialDesign
-    implementation Dependencies.constraint_layout
-    //my libs
-    implementation Dependencies.space_navigation_bar
-    //modules
     implementation project(Modules.presentation)
     implementation project(Modules.data)
-    implementation project(Modules.splash)
-    //test libs
-    testImplementation Dependencies.jUnit
-    androidTestImplementation Dependencies.androidx_test
-    androidTestImplementation Dependencies.espresso_core
 }

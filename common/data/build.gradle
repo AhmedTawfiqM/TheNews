@@ -22,7 +22,12 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            buildConfigField("String", "API_BASE_URL", "")
+            buildConfigField("String", "API_BASE_URL", "\"${Config.API_BASE_URL_PROD}\"")
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            buildConfigField("String", "API_BASE_URL", "\"${Config.API_BASE_URL_DEV}\"")
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -36,22 +41,10 @@ android {
 }
 
 dependencies {
-
-    //initial
-    implementation Dependencies.Kotlin
-    implementation Dependencies.androidx_core
-    implementation Dependencies.appCompact
-    implementation Dependencies.materialDesign
-    implementation Dependencies.constraint_layout
-
-    //test libs
-    testImplementation Dependencies.jUnit
-    androidTestImplementation Dependencies.androidx_test
-    androidTestImplementation Dependencies.espresso_core
+    api project(Modules.core)
 
     //my libs
     implementation Dependencies.retrofit
     implementation Dependencies.retrofitConvertor
-    implementation Dependencies.koin
 
 }

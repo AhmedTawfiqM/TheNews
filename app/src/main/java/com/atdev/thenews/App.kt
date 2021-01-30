@@ -1,15 +1,35 @@
 package com.atdev.thenews
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Application
+import android.content.Context
+import androidx.annotation.StringRes
+import com.atdev.thenews.di.KoinInjector
 
 class App : Application() {
 
-    private lateinit var activity: Activity
+    override fun onCreate() {
+        super.onCreate()
 
-    fun setCurrentActivity(activity: Activity) {
-        this.activity = activity
+        context = applicationContext
+        KoinInjector().injectModules(this)
     }
 
-    fun getCurrentActivity() = this.activity
+
+    companion object {
+
+        @SuppressLint("StaticFieldLeak")
+        private lateinit var context: Context
+
+        fun getContext() = context
+
+        @JvmStatic
+        fun string(@StringRes res: Int): String {
+            return context.getString(res)
+        }
+
+    }
+
+
 }
